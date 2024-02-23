@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <table class="table table-bordered table-hover" >
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Genre</th>
+                <th>Stock</th>
+                <th>Daily Rate</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ movies.title }}</td>
+                <td>{{ movies.genre }}</td>
+                <td>{{ movies.numbers_in_stock }}</td>
+                <td>{{ movies.daily_rate }}</td>
+            </tr>
+        </tbody>
+    </table>
+{% endblock %}
